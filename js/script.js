@@ -117,68 +117,18 @@
 		Carousel: function() {
 			// Header slider
 			$('#header .slider-pro').sliderPro({
-				width: 1920,
-				height: 900,
-				arrows: true,
-				buttons: false,
-				forceSize: 'fullWidth',
-				slideDistance: 0,
-				autoScaleLayers: false,
-				breakpoints: {
-					1820: {
-						height: 950
-					},
-					1720: {
-						height: 1000
-					},
-					1620: {
-						height: 1050
-					},
-					1520: {
-						height: 1100
-					},
-					1420: {
-						height: 1150
-					},
-					1320: {
-						height: 1200
-					},
-					1220: {
-						height: 1250
-					},
-					1120: {
-						height: 1300
-					},
-					1020: {
-						height: 1350
-					},
-					920: {
-						height: 1400
-					},
-					820: {
-						height: 1450
-					},
-					720: {
-						height: 1500
-					},
-					620: {
-						height: 1600
-					},
-					520: {
-						height: 1700
-					},
-					420: {
-						height: 1800
-					},
-					320: {
-						height: 1900
-					}
-				}
+				width: '100%',
+    height: 680,
+				    arrows: true,
+				    buttons: false,
+				    waitForLayers: true,
+				    fade: true,
+				    autoplay: false,
+				    imageScaleMode:'none'
+				
 			});
 			
-			$('#header .slider-pro').on('gotoSlideComplete', function() {
-				$(window).trigger('resize.px.parallax');
-			});
+			
 			
 			// Teams carousel
 			$('.carousel-slider.teams-row').slick({
